@@ -13,7 +13,7 @@ body {
     padding: 0;
     background-image: url('assets/Pumpkin-Halloween-Desktop-Wallpaper.jpg');
     background-color: #000000;
-    background-size:  1920px 1080px;
+    background-size:  cover;
     background-repeat: no-repeat;
     text-align: center;
 }
