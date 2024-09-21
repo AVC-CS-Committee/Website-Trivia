@@ -8,7 +8,7 @@
 
 /* General body styling */
 body {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS, Comic Sans;
     margin: 0;
     padding: 0;
     background-image: url('assets/Pumpkin-Halloween-Desktop-Wallpaper.jpg');
@@ -113,7 +113,7 @@ header {
     cursor: pointer;
     font-size: 20px;
     color: white;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS, Comic Sans;
     text-shadow: 3px 3px 3px black;
     transition: background-color 0.3s;
 }
