@@ -10,9 +10,30 @@
     <div class="rectangle-title">
         <h1 class="title-text">Enter your name:</h1>
         <a href="index-question.html">
-        <button class="continue-button">Continue</button>
+        <button class="continue-button" id = "continueButton" onclick="saveName()" disabled>Continue</button>
     </a>
-        <input type="text" name="Name" placeholder="Name">
+        <input type="text" id ="nameInput" name="Name" placeholder="Name">
     </div>
+
+    <script>
+         const name = document.getElementById("nameInput");
+         const continueButton = document.getElementById("continueButton");
+
+         name.addEventListener("input", function() {
+            if (name.value.trim() !== "") {
+                continueButton.disabled = false;
+            } else {
+                continueButton.disabled = true;
+            }
+         });
+
+        function saveName() {
+            if (name) {
+                localStorage.setItem("Name", name);
+                console.log("test: ", name);
+        }
+    }
+    </script>
+
 </body>
 </html>
