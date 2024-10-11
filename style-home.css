@@ -128,3 +128,10 @@ header {
 .start-button:active {
     background-color: #dd9755;
 }
+
+@media (max-width: 768px) {
+    body {
+        font-family: 'Comic Neue', cursive;
+        /* Ensure it's set here too */
+    }
+}
