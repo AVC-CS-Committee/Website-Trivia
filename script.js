@@ -1,54 +1,54 @@
 // Array of questions and answers
 const questions = [
     {
-        question: "Question 1?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correct: 0 // Index of the correct answer
+        question: "Question 1: What was the original purpose of wearing costumes on Halloween?",
+        answers: ["To celebrate the harvest", "To scare away ghosts", "To attract good fortune", "To honor deceased loved ones"],
+        correct: 1 // Index of the correct answer
     },
     {
-        question: "Question 2?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        question: "Question 2: Which country is believed to be the birthplace of Halloween?",
+        answers: ["United States", "Mexico", "Ireland", "Germany"],
+        correct: 2
+    },
+    {
+        question: "Question 3: Which popular Halloween candy was originally called \"Chicken Feed\"?",
+        answers: ["Skittles", "Candy Corn", "M&Ms", "Twizzlers"],
+        correct: 1
+    },
+    {
+        question: "Question 4: What vegetable was originially used to make Jack-o'-lanterns before pumpkins?",
+        answers: ["Potatoes", "Carrots", "Turnips", "Squash"],
+        correct: 2
+    },
+    {
+        question: "Question 5: What does the name \"Dracula\" mean in Romanian?",
+        answers: ["Son of the Dragon", "Night Stalker", "Blood Seeker", "Dark Prince"],
         correct: 0
     },
     {
-        question: "Question 3?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        question: "Question 6: Which phobia refers to the fear of Halloween?",
+        answers: ["Samhainophobia", "Nyctophobia", "Coulrophobia", "Necrophobia"],
         correct: 0
     },
     {
-        question: "Question 4?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        question: "Question 7: What is the most popular Halloween costume for children in the United States?",
+        answers: ["Superhero", "Witch", "Vampire", "Princess"],
+        correct: 3
+    },
+    {
+        question: "Question 8: What is the name of the legendary monster said to be created from parts of dead bodies and brought to life by a mad scientist?",
+        answers: ["The Werewolf", "The Mummy", "Frankenstein's Monster", "The Headless Horseman"],
+        correct: 2
+    },
+    {
+        question: "Question 9: What is the name of the ancient Celtic festival that Halloween is beleived to have orginated from?",
+        answers: ["Samhain", "Beltane", "Imbolc", "Lughnasadh"],
         correct: 0
     },
     {
-        question: "Question 5?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correct: 0
-    },
-    {
-        question: "Question 6?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correct: 0
-    },
-    {
-        question: "Question 7?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correct: 0
-    },
-    {
-        question: "Question 8?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correct: 0
-    },
-    {
-        question: "Question 9?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correct: 0
-    },
-    {
-        question: "Question 10?",
-        answers: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correct: 0
+        question: "Question 10: What is the significance of the colors orange and black during Halloween?",
+        answers: ["They represent life and death", "They are the colors of witches", "They symbolize fire and ice", "They represent autumn and night"],
+        correct: 3
     }
 ];
 
