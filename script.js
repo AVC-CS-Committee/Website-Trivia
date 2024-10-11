@@ -52,7 +52,6 @@ const questions = [
     }
 ];
 
-
 let currentQuestionIndex = 0;
 
 // Function to display a question
@@ -60,6 +59,7 @@ function displayQuestion() {
     const questionTitle = document.querySelector('.question-title');
     const answersGrid = document.querySelector('.answers-grid');
     const nextButton = document.querySelector('.next-button');
+    const finishButton = document.querySelector('.finish-button');
 
     // Clear previous answers
     answersGrid.innerHTML = '';
@@ -80,7 +80,13 @@ function displayQuestion() {
     });
 
     // Show next button if not on the last question
-    nextButton.style.display = currentQuestionIndex < questions.length - 1 ? 'block' : 'none';
+    if (currentQuestionIndex < questions.length - 1) {
+        nextButton.style.display = 'block';
+        finishButton.style.display = 'none'; // Hide the finish button
+    } else {
+        nextButton.style.display = 'none'; // Hide the next button
+        finishButton.style.display = 'block'; // Show the finish button
+    }
 }
 
 // Function to handle answer selection
@@ -101,10 +107,12 @@ document.querySelector('.next-button').addEventListener('click', () => {
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         displayQuestion(); // Show next question
-    } else {
-        // End of quiz logic can go here, like showing a score
-        alert("Quiz finished!");
     }
+});
+
+// Function to handle finish button click and redirect
+document.querySelector('.finish-button').addEventListener('click', () => {
+    window.location.href = "results.html"; // Redirect to the results page
 });
 
 // Initial display
