@@ -1,14 +1,5 @@
-/* 
- * This CSS file contains styles for the webpage layout and design.
- * 
- * 
- * Ensure to follow the naming conventions and keep the styles organized.
- */
-
-
-/* General body styling */
 body {
-    font-family: Comic Sans MS, Comic Sans;
+    font-family: "Comic Neue", cursive;
     margin: 0;
     padding: 0;
     background-image: url('assets/background-50.jpg');
@@ -41,7 +32,7 @@ header {
 
 /* Title Text */
 .title-text {
-    font-size: 23px;
+    font-size: 26px;
     color: #DC7F28;
     font-weight: bold;
     display: block;
@@ -56,8 +47,8 @@ header {
     width: 65px;
     height: 68px;
     display: block;
-    margin-left: 286px;
-    margin-top: -70px;
+    margin-left: 275px;
+    margin-top: -73px;
 }
 
 /* Rectangle for Buttons */
@@ -129,7 +120,7 @@ header {
     background-color: #dd9755;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 2000px) {
     body {
         font-family: 'Comic Neue', cursive;
         /* Ensure it's set here too */
