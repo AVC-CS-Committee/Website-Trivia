@@ -41,14 +41,14 @@ const questions = [
         correct: 2
     },
     {
-        question: "Question 9: What is the name of the ancient Celtic festival that Halloween is believed to have originated from?",
-        answers: ["Samhain", "Beltane", "Imbolc", "Lughnasadh"],
-        correct: 0
+        question: "Question 9: What is the significance of the colors orange and black during Halloween? They represent:",
+        answers: ["life and death", "the colors of witches", "fire and ice", "Autumn and night"],
+        correct: 3
     },
     {
-        question: "Question 10: What is the significance of the colors orange and black during Halloween?",
-        answers: ["They represent life and death", "They are the colors of witches", "They symbolize fire and ice", "They represent autumn and night"],
-        correct: 3
+        question: "Question 10: What club will you vote for the best car award?",
+        answers: ["STEM Club", "Other Clubs", "Other Clubs", "Other Clubs"],
+        correct: 0
     }
 ];
 
