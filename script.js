@@ -52,6 +52,7 @@ const questions = [
     }
 ];
 
+//the current question
 let currentQuestionIndex = 0;
 
 // Function to display a question
