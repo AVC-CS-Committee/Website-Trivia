@@ -16,7 +16,7 @@ const questions = [
         correct: 1
     },
     {
-        question: "Question 4: What vegetable was originially used to make Jack-o'-lanterns before pumpkins?",
+        question: "Question 4: What vegetable was originally used to make Jack-o'-lanterns before pumpkins?",
         answers: ["Potatoes", "Carrots", "Turnips", "Squash"],
         correct: 2
     },
@@ -41,7 +41,7 @@ const questions = [
         correct: 2
     },
     {
-        question: "Question 9: What is the name of the ancient Celtic festival that Halloween is beleived to have orginated from?",
+        question: "Question 9: What is the name of the ancient Celtic festival that Halloween is believed to have originated from?",
         answers: ["Samhain", "Beltane", "Imbolc", "Lughnasadh"],
         correct: 0
     },
@@ -53,6 +53,8 @@ const questions = [
 ];
 
 let currentQuestionIndex = 0;
+let selectedAnswerIndex = null; // Keep track of the selected answer
+let score = 0; // Track the number of correct answers
 
 // Function to display a question
 function displayQuestion() {
@@ -63,6 +65,10 @@ function displayQuestion() {
 
     // Clear previous answers
     answersGrid.innerHTML = '';
+    selectedAnswerIndex = null; // Reset selected answer
+
+    // Disable the next button initially
+    nextButton.disabled = true;
 
     // Get current question
     const currentQuestion = questions[currentQuestionIndex];
@@ -100,18 +106,33 @@ function selectAnswer(selectedIndex) {
             button.classList.add('selected'); // Highlight selected button
         }
     });
+
+    // Set selected answer and enable the next button
+    selectedAnswerIndex = selectedIndex;
+    document.querySelector('.next-button').disabled = false;
 }
 
 // Function to handle next button click
 document.querySelector('.next-button').addEventListener('click', () => {
+    checkAnswer(); // Check if the selected answer is correct
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         displayQuestion(); // Show next question
     }
 });
 
+// Function to check the selected answer and update the score
+function checkAnswer() {
+    const currentQuestion = questions[currentQuestionIndex];
+    if (selectedAnswerIndex === currentQuestion.correct) {
+        score++; // Increment score if correct
+    }
+}
+
 // Function to handle finish button click and redirect
 document.querySelector('.finish-button').addEventListener('click', () => {
+    checkAnswer(); // Check the final answer
+    localStorage.setItem('triviaScore', score); // Store the score in localStorage
     window.location.href = "results.html"; // Redirect to the results page
 });
 

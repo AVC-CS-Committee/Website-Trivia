@@ -1,0 +1,95 @@
+body {
+    font-family: "Comic Neue", cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/background-50.jpg');
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* Title Rectangle */
+.rectangle-title {
+    width: 360px;
+    height: 100px;
+    background-color: #3C3838;
+    border: 1px solid #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+    border-radius: 45px;
+}
+
+/* Title Text */
+.title-text {
+    font-size: 26px;
+    color: #DC7F28;
+    font-weight: bold;
+    display: block;
+    margin-left: -70px;
+    margin-top: 34px;
+    text-shadow: 3px 3px 3px black;
+    white-space: nowrap;
+}
+
+/* Title Jack-O-Lantern */
+.jackolantern {
+    width: 65px;
+    height: 68px;
+    display: block;
+    margin-left: 275px;
+    margin-top: -73px;
+}
+
+/* Score Container */
+.score-container {
+    width: 270px;
+    height: 180px;
+    background-color: #3C3838;
+    border: 1px solid #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-radius: 45px;
+    padding-top: 25px;
+}
+
+/* Score Text */
+.score-text {
+    font-size: 22px;
+    color: #DC7F28;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+}
+
+/* Home Button */
+.home-button {
+    background-color: #DC7F28;
+    width: 200px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: 1px solid #000;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-family: "Comic Neue", cursive;
+    text-shadow: 3px 3px 3px black;
+    transition: background-color 0.3s;
+}
+
+/* Home Button Hover */
+.home-button:hover {
+    background-color: #da8b41;
+}
+
+/* Home Button Active */
+.home-button:active {
+    background-color: #dd9755;
+}

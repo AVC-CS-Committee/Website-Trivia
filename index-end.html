@@ -1,7 +1,6 @@
-<!--
-This is the main page of the website. It will contain the main content of the website. (Frontend)
--->
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,21 +8,32 @@ This is the main page of the website. It will contain the main content of the we
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Trivia</title>
-    <link rel="stylesheet" href="style-home.css">
+    <title>Trivia Results</title>
+    <link rel="stylesheet" href="style-end.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="rectangle-title">
-        <h1 class="title-text">Trunk-Or-Treat Trivia</h1>
+        <h1 class="title-text">Your Results</h1>
         <img src='assets/pumpkin.png' alt="Jack O Lantern" class="jackolantern">
     </div>
-    <div class="rectangle-button">
-        <!-- <button class="leaderboard-button">Leaderboard</button> -->
+    <div class="score-container">
+        <h2 class="score-text">You scored: <span id="user-score"></span>/10</h2>
         <a href="index.html">
-            <button class="start-button">Back to start</button>
+            <button class="home-button">Back to Home</button>
         </a>
     </div>
+
+    <script>
+        // Assuming score is stored in localStorage from the previous page
+        const userScore = localStorage.getItem('triviaScore') || 0;
+        document.getElementById('user-score').textContent = userScore;
+    </script>
 </body>
 
 </html>
