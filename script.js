@@ -55,6 +55,7 @@ const questions = [
 let currentQuestionIndex = 0;
 let selectedAnswerIndex = null; // Keep track of the selected answer
 let score = 0; // Track the number of correct answers
+let wrongQuestions = []; // Array to store the questions the user got wrong
 
 // Function to display a question
 function displayQuestion() {
@@ -126,14 +127,27 @@ function checkAnswer() {
     const currentQuestion = questions[currentQuestionIndex];
     if (selectedAnswerIndex === currentQuestion.correct) {
         score++; // Increment score if correct
+    } else {
+        // If wrong, store the question index and selected answer
+        wrongQuestions.push({
+            questionIndex: currentQuestionIndex,
+            incorrectAnswer: selectedAnswerIndex
+        });
+        console.log(`Missed Question: ${currentQuestionIndex}, Incorrect Answer: ${selectedAnswerIndex}`);
     }
 }
 
 // Function to handle finish button click and redirect
 document.querySelector('.finish-button').addEventListener('click', () => {
     checkAnswer(); // Check the final answer
-    localStorage.setItem('triviaScore', score); // Store the score in localStorage
-    window.location.href = "results.html"; // Redirect to the results page
+    console.log("Final Score:", score);
+    console.log("Wrong Questions:", wrongQuestions);
+
+    // Store the score and wrong questions in localStorage
+    localStorage.setItem('triviaScore', score);
+    localStorage.setItem('wrongQuestions', JSON.stringify(wrongQuestions)); // Save the wrong questions
+
+    window.location.href = "index-end.html"; // Redirect to the results page
 });
 
 // Initial display

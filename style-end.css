@@ -46,7 +46,7 @@ body {
 /* Score Container */
 .score-container {
     width: 270px;
-    height: 180px;
+    height: auto;
     background-color: #3C3838;
     border: 1px solid #000;
     display: block;
@@ -55,6 +55,7 @@ body {
     margin-top: 80px;
     border-radius: 45px;
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /* Score Text */
@@ -66,6 +67,7 @@ body {
 }
 
 /* Home Button */
+.review-button,
 .home-button {
     background-color: #DC7F28;
     width: 200px;
