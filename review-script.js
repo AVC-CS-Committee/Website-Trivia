@@ -80,7 +80,7 @@ if (questionsToShow.length === 0) {
     // You might want to redirect the user or handle this case differently
 } else {
     let currentQuestionIndex = 0;
-    let score = 0; // Track the number of correct answers
+
 
     // Function to display a question
     function displayQuestion() {
