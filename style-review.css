@@ -48,6 +48,7 @@ body {
     text-shadow: 2px 2px 5px black;
     transition: background-color 0.3s;
     height: fit-content;
+    min-height: 100px;
     /* Ensure consistent height */
 }
 
