@@ -36,6 +36,13 @@
         // Assuming score is stored in localStorage from the previous page
         const userScore = localStorage.getItem('triviaScore') || 0;
         document.getElementById('user-score').textContent = userScore;
+        // Remove the review button if the user scored 10/10
+        if (parseInt(userScore) === 10) {
+            const reviewButton = document.querySelector('.review-button');
+            if (reviewButton) {
+                reviewButton.style.display = 'none';  // Hides the button
+            }
+        }
     </script>
 </body>
 
