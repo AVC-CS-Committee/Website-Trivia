@@ -47,7 +47,7 @@ const questions = [
     },
     {
         question: "Question 10: What club will you vote for the best car award?",
-        answers: ["STEM Club", "Other Clubs", "Other Clubs", "Other Clubs"],
+        answers: ["STEM Club", "MENA", "Alpha Iota", "Pre Law"],
         correct: 0
     }
 ];
