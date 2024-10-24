@@ -48,7 +48,8 @@ body {
     cursor: pointer;
     text-shadow: 2px 2px 5px black;
     transition: background-color 0.3s;
-    height: 100px;
+    height: fit-content;
+    max-height: 100px;
     width: 100%;
 }
 
